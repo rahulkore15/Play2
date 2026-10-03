@@ -2,7 +2,7 @@ name: Play2 Tests Every 5 Min
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       
       - uses: actions/setup-node@v5
         with:
-          node-version: 18
+          node-version: 20
           
       - name: Install dependencies
         run: npm install
