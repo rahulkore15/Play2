@@ -16,7 +16,7 @@ jobs:
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run tests
-        run: npx playwright test tests/todo.demo1.spec.ts
+        run: npx playwright test tests/todo.demo1.spec.ts --project=chromium
       - name: Send email
         if: always()
         uses: dawidd6/action-send-mail@v4
