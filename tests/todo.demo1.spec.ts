@@ -21,5 +21,5 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Active' }).click();
   await page.getByRole('link', { name: 'Completed' }).click();
   await page.getByRole('button', { name: 'Clear completed' }).click();
-  //await expect(page.locator('.todo-list li')).toHaveCount(0);
+  await expect(page.locator('.todo-list li')).toHaveCount(0);
 });
